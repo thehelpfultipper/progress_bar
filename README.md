@@ -2,7 +2,7 @@
 
 A Pen created on CodePen.io. Original URL: [https://codepen.io/thehelpfultipper/pen/vYrrPPa](https://codepen.io/thehelpfultipper/pen/vYrrPPa).
 <br><br>
-**Blog Post:**
+**Blog Post:** [Easily Make A Progress Bar With HTML, CSS, And Javascript](https://thehelpfultipper.com/progress-bar-with-html-css-and-javascript/)
 
 Find a detailed walkthrough in the blog post on The Helpful Tipper blog (^_^)
 <br><br>
