@@ -1,0 +1,176 @@
+/*
+* Prefixed by https://autoprefixer.github.io
+* PostCSS: v8.4.14,
+* Autoprefixer: v10.4.7
+* Browsers: last 4 version
+*/
+
+* {
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+}
+
+body {
+  margin: 0;
+  padding: 0;
+  height: 100vh;
+}
+
+/* navigation */
+nav {
+  background-color: #F5F5F5; 
+  -webkit-box-shadow: 0 2px 2px #E2DFD2;
+          box-shadow: 0 2px 2px #E2DFD2;
+  width: 100%;
+  height: 80px;
+  position: fixed;
+  z-index: 3;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+}
+
+#logo {
+  padding: 0 20px;
+}
+
+#logo img {
+  transform: scale(.9);
+}
+
+/* hamburger menu */
+#hbg-menu {
+  margin-right: 5px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  width: 70px;
+  height: 70px;
+  border-radius: 50%;
+  position: relative;
+}
+
+#hbg-menu:hover {
+  cursor: pointer;
+}
+
+span:not(#progress) {
+  display: block;
+  background-color: black;
+  width: 20px;
+  height: 2px;
+  border-radius: 5px;
+  position: absolute;
+  top: 0;
+  -webkit-transition: -webkit-transform .2s;
+  transition: -webkit-transform .2s;
+  -o-transition: transform .2s;
+  transition: transform .2s;
+  transition: transform .2s, -webkit-transform .2s; 
+}
+
+span:not(#progress):nth-of-type(1) {
+  top: calc(50% - 6px);
+}
+
+span:not(#progress):nth-of-type(2) {
+  top: 50%;
+}
+
+span:not(#progress):nth-of-type(3) {
+  top: calc(50% + 6px);
+}
+
+
+/* animation classes */
+.top-center {
+  -webkit-transform: translateY(6px);
+      -ms-transform: translateY(6px);
+          transform: translateY(6px);
+}
+
+.bottom-center {
+  -webkit-transform: translateY(-6px);
+      -ms-transform: translateY(-6px);
+          transform: translateY(-6px);
+}
+
+.turn-45 {
+  -webkit-animation: turn-45 .2s .2s forwards;
+          animation: turn-45 .2s .2s forwards;
+}
+
+@-webkit-keyframes turn-45 {
+  100% {
+    -webkit-transform: rotate(45deg);
+            transform: rotate(45deg);
+  }
+}
+
+@keyframes turn-45 {
+  100% {
+    -webkit-transform: rotate(45deg);
+            transform: rotate(45deg);
+  }
+}
+
+.turn-90 {
+  -webkit-animation: turn-90 .2s .2s forwards;
+          animation: turn-90 .2s .2s forwards;
+}
+
+@-webkit-keyframes turn-90 {
+  100% {
+    -webkit-transform: rotate(90deg);
+            transform: rotate(90deg);
+  }
+}
+
+@keyframes turn-90 {
+  100% {
+    -webkit-transform: rotate(90deg);
+            transform: rotate(90deg);
+  }
+}
+/* end animation classes */
+
+/* Begin Progress Bar */
+#progress-bar {
+  width: 100%;
+  background: pink;
+  height: 5px;
+  position: fixed;
+  top: 80px;
+  z-index: 3;
+}
+
+#progress {
+  display: inline-block;
+  background: #DE892E;
+  height: 5px; 
+  vertical-align: top;
+  transition: all .1s ease-in-out;
+}
+
+/* End */
+
+/* Begin Main Content */
+#content {
+  width: 630px;
+  margin: 0 auto;
+  padding: 20px;
+  position: relative;
+  top: 80px;
+  z-index: 1;
+}
+
+/* End */
